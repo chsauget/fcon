@@ -177,6 +177,15 @@ Utilisez le modèle sémantique **Contoso Sales** fourni plutôt que l'un des v�
 
 3. Collez-la dans le **terminal B** et appuyez sur **Entrée**.
 
+	> [!TIP]
+	> Sous Windows, si PowerShell refuse d'exécuter `npm.ps1` avec une erreur `UnauthorizedAccess` / `PSSecurityException` (scripts désactivés), autorisez leur exécution pour votre utilisateur :
+	>
+	> ```powershell
+	> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+	> ```
+	>
+	> Confirmez si demandé, puis relancez la commande. Ce réglage reste valable pour toutes les commandes `npm`/`npx` du reste du lab.
+
 	![fabric-app-terminal-scaffolding](resources/img/fabric-app-terminal-scaffolding.png)
 
 	**Remarque :** utilisez la commande générée pour **votre** Fabric App. Le nom de l'app, le nom du workspace et l'URL de base de l'API diffèrent de l'exemple.
