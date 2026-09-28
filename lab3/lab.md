@@ -62,6 +62,13 @@ Utilisez le modèle sémantique **Contoso Sales** fourni plutôt que l'un des v�
 	az login --tenant 64a5d9e8-a2d2-4914-bba4-4840b3732a7c --allow-no-subscriptions
 	```
 
+	> [!TIP]
+	> Si la fenêtre de sélection de compte se ferme dès que vous cliquez sur un autre compte que celui déjà connecté (session SSO qui interfère), ajoutez `--use-device-code` : un code s'affiche dans le terminal, à saisir sur https://microsoft.com/devicelogin, sans passer par le sélecteur de comptes du navigateur.
+	>
+	> ```bash
+	> az login --tenant 64a5d9e8-a2d2-4914-bba4-4840b3732a7c --allow-no-subscriptions --use-device-code
+	> ```
+
 3. Suivez la connexion dans le navigateur, puis revenez au terminal.
 4. Vérifiez le compte actif :
 
